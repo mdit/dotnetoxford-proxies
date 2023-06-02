@@ -1,6 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using DotNetOxford.ProxyDemo;
 using DotNetOxford.ProxyDemo.Model;
 
 var manager = new EngineeringManager("Laid Back Larry");
@@ -18,6 +17,8 @@ Console.ReadLine();
 // Proxies
 Console.WriteLine("Proxy instance");
 var proxyManager = new EngineeringManagerProxy(manager);
+Console.WriteLine(proxyManager.AttentionLevel);
 Console.WriteLine(proxyManager.RequestCodeFromTeam());
+
 Console.ReadLine();
 
