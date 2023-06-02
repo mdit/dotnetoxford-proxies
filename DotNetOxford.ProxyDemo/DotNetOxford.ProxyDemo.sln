@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetOxford.ProxyDemo", "DotNetOxford.ProxyDemo\DotNetOxford.ProxyDemo.csproj", "{9A430904-0A1F-4483-B2F8-1CA13EB08204}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetOxford.ProxyDemo.CommandLine", "DotNetOxford.ProxyDemo.CommandLine\DotNetOxford.ProxyDemo.CommandLine.csproj", "{CF437B74-DDE1-4CB5-B2E6-2F91F3AA1780}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{9A430904-0A1F-4483-B2F8-1CA13EB08204}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A430904-0A1F-4483-B2F8-1CA13EB08204}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A430904-0A1F-4483-B2F8-1CA13EB08204}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF437B74-DDE1-4CB5-B2E6-2F91F3AA1780}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF437B74-DDE1-4CB5-B2E6-2F91F3AA1780}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF437B74-DDE1-4CB5-B2E6-2F91F3AA1780}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF437B74-DDE1-4CB5-B2E6-2F91F3AA1780}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
