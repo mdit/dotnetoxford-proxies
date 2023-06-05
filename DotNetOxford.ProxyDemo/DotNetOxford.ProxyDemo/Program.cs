@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using DotNetOxford.ProxyDemo.Model;
+using DotNetOxford.ProxyDemo.Services;
 
 var manager = new EngineeringManager("Laid Back Larry");
 var lead = new LeadSoftwareEngineer("Meticulous Max");
@@ -21,4 +22,9 @@ Console.WriteLine(proxyManager.AttentionLevel);
 Console.WriteLine(proxyManager.RequestCodeFromTeam());
 
 Console.ReadLine();
+var messageBoxService = new MessageService();
+var userService = new UserService(messageBoxService);
 
+userService.DisplayUserMessage(manager, "Do some work!");
+
+Console.ReadLine();
