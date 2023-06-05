@@ -1,4 +1,5 @@
 ﻿using DotNetOxford.ProxyDemo.Model;
+using DotNetOxford.ProxyDemo.Services;
 using ProxyInterfaceGenerator;
 
 namespace DotNetOxford.ProxyDemo.Model;
@@ -30,5 +31,10 @@ public partial interface ISeniorSoftwareEngineer : ISoftwareEngineer
 
 [Proxy(typeof(LeadSoftwareEngineer))]
 public partial interface ILeadSoftwareEngineer : ISeniorSoftwareEngineer
+{
+}
+
+[Proxy(typeof(MessageService))]
+public partial interface IMessageService
 {
 }

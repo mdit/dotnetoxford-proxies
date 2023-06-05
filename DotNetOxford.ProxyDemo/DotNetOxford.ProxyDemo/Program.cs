@@ -22,8 +22,9 @@ Console.WriteLine(proxyManager.AttentionLevel);
 Console.WriteLine(proxyManager.RequestCodeFromTeam());
 
 Console.ReadLine();
-var messageBoxService = new MessageService();
-var userService = new UserService(messageBoxService);
+var messageService = new MessageService();
+var messageServiceProxy = new MessageServiceProxy(messageService);
+var userService = new UserService(messageServiceProxy);
 
 userService.DisplayUserMessage(manager, "Do some work!");
 

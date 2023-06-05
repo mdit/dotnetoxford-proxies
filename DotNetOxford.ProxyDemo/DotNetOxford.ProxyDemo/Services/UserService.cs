@@ -4,9 +4,9 @@ namespace DotNetOxford.ProxyDemo.Services
 {
     public class UserService
     {
-        private readonly MessageService _messageService;
+        private readonly IMessageService _messageService;
 
-        public UserService(MessageService messageService)
+        public UserService(IMessageService messageService)
         {
             _messageService = messageService;
         }
